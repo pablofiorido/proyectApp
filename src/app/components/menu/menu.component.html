@@ -1,1 +1,29 @@
-<p>menu works!</p>
+<nav class="menu-container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/SpaceX_logo_black.png" alt="SpaceX Logo">
+    </div>
+    <ul class="menu-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" *ngIf="isMenuOpen">
+    <ul class="mobile-menu-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  

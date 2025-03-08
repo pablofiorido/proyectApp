@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+    // Scroll function to go to the mission section
+  scrollToMission(): void {
+    const missionSection = document.getElementById('mission');
+    if (missionSection) {
+      missionSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }
