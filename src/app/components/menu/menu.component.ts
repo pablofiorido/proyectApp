@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+    isMenuOpen = false;
+
+    // Función para alternar el estado del menú en móvil
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
 }
